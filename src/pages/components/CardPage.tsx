@@ -189,6 +189,7 @@ const CardPage = () => {
               />
             </div>
           </ComponentDemo>
+
           <ComponentDemo code={outLineCard}>
             <div className="w-100">
               <Card
@@ -212,8 +213,10 @@ const CardPage = () => {
               />
             </div>
           </ComponentDemo>
+
           <div className="flex flex-col gap-10">
             <h1 className="text-2xl font-bold">Animated Card</h1>
+
             <ComponentDemo code={animatedCard}>
               <div className="w-100">
                 <Card
@@ -262,6 +265,7 @@ const CardPage = () => {
               </div>
             </ComponentDemo>
           </div>
+
         </div>
       </section>
 

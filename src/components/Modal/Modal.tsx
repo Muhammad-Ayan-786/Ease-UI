@@ -29,7 +29,7 @@ const modalVariants = cva(
 
 interface ModalProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof modalVariants> {
+  VariantProps<typeof modalVariants> {
   asChild?: boolean;
   isOpen?: boolean;
   title?: string;

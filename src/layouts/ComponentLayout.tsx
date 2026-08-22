@@ -4,7 +4,7 @@ import { Menu } from "lucide-react";
 
 type Props = {};
 
-const ComponentLayout = ({}: Props) => {
+const ComponentLayout = ({ }: Props) => {
   const location = useLocation();
   console.log(location);
   const navigate = useNavigate();
@@ -16,8 +16,8 @@ const ComponentLayout = ({}: Props) => {
     "Modal",
     "Input",
     "Navbar",
-    "Carousel",
     "Tooltip",
+    "Carousel",
     "Layout",
   ];
 
@@ -39,11 +39,10 @@ const ComponentLayout = ({}: Props) => {
             <li
               onClick={() => navigate(item.toLowerCase())}
               key={item}
-              className={`cursor-pointer hover:text-black text-md hover:translate-x-1 transition-all duration-200 ease-in-out ${
-                location.pathname === `/components/${item.toLowerCase()}`
+              className={`cursor-pointer hover:text-black text-md hover:translate-x-1 transition-all duration-200 ease-in-out ${location.pathname === `/components/${item.toLowerCase()}`
                   ? "text-black"
                   : "text-gray-400"
-              }`}
+                }`}
             >
               {item}
             </li>
